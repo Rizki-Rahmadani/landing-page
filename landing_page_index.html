@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Your Product — Professional Landing</title>
+  <meta name="description" content="Professional landing page template. Clean hero, features, pricing, and contact CTA." />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --brand:#0b74ff;
+      --muted:#6b7280;
+      --bg:#f7fafc;
+      --card:#ffffff;
+      --radius:14px;
+      font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;background:var(--bg);color:#0f172a}
+    a{color:inherit;text-decoration:none}
+    .container{max-width:1100px;margin:0 auto;padding:28px}
+    .nav{display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .logo{display:flex;align-items:center;gap:10px;font-weight:700}
+    .logo .mark{width:40px;height:40px;border-radius:10px;background:linear-gradient(135deg,var(--brand),#7cc3ff);display:flex;align-items:center;justify-content:center;color:white;font-weight:800}
+    .menu{display:flex;gap:18px;align-items:center}
+    .btn{display:inline-block;padding:10px 18px;border-radius:10px;background:var(--brand);color:white;font-weight:600}
+
+    /* Hero */
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:32px;align-items:center;padding:36px 0}
+    .hero h1{font-size:36px;margin:0 0 12px;line-height:1.05}
+    .hero p{color:var(--muted);margin:0 0 20px}
+    .card{background:var(--card);border-radius:var(--radius);box-shadow:0 8px 30px rgba(12,16,24,0.06);padding:22px}
+
+    .features{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:28px}
+    .feature{background:transparent;padding:14px;border-radius:12px}
+    .feature h4{margin:6px 0 4px}
+    .feature p{margin:0;color:var(--muted);font-size:14px}
+
+    .hero-visual{border-radius:12px;overflow:hidden;background:linear-gradient(180deg,#eaf6ff,#ffffff);height:320px;display:flex;align-items:center;justify-content:center}
+    .hero-visual svg{width:100%;height:auto;max-width:380px}
+
+    /* Pricing */
+    .pricing{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin:40px 0}
+    .plan{background:var(--card);padding:20px;border-radius:12px;text-align:left}
+    .plan h3{margin:0 0 8px}
+    .plan .price{font-size:22px;font-weight:700;margin:10px 0}
+
+    /* CTA */
+    .cta{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:28px;background:linear-gradient(90deg,rgba(11,116,255,0.08),rgba(124,195,255,0.04));border-radius:12px;margin:28px 0}
+
+    /* Footer */
+    footer{padding:28px 0;color:var(--muted);font-size:14px}
+
+    /* Responsive */
+    @media (max-width:900px){
+      .hero{grid-template-columns:1fr;}
+      .features{grid-template-columns:1fr 1fr}
+      .pricing{grid-template-columns:1fr}
+      .menu{display:none}
+    }
+  </style>
+</head>
+<body>
+  <header class="container">
+    <nav class="nav">
+      <div class="logo"><div class="mark">Y</div><div>
+        <div style="font-size:16px">YourProduct</div>
+        <div style="font-size:12px;color:var(--muted);margin-top:2px">Professional landing</div>
+      </div></div>
+      <div class="menu">
+        <a href="#features">Features</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#contact">Contact</a>
+        <a class="btn" href="#contact">Get Started</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div>
+        <h1>Build trust. Convert visitors. Grow faster.</h1>
+        <p>High-converting landing page template designed for startups and SaaS. Lightweight, accessible, and easy to customize.</p>
+
+        <div style="display:flex;gap:12px;align-items:center;flex-wrap:wrap">
+          <a class="btn" href="#contact">Start free trial</a>
+          <a href="#features" style="color:var(--muted);font-weight:600">See features →</a>
+        </div>
+
+        <div class="features" id="features">
+          <div class="feature">
+            <strong>Fast performance</strong>
+            <p>Optimized for speed and SEO — fast load times on all devices.</p>
+          </div>
+          <div class="feature">
+            <strong>Beautiful UI</strong>
+            <p>Modern design and clean typography that converts.</p>
+          </div>
+          <div class="feature">
+            <strong>Easy to customize</strong>
+            <p>Well-structured markup and simple CSS variables to adapt brand.</p>
+        </div>
+        </div>
+
+        <div class="card" style="margin-top:20px;display:flex;gap:12px;align-items:center">
+          <div style="flex:1">
+            <div style="font-weight:700">Trusted by teams at</div>
+            <div style="color:var(--muted);margin-top:8px">Acme, BlueCorp, Nova, Dyna</div>
+          </div>
+          <div style="font-size:12px;color:var(--muted)">⭐ 4.8 — 1,200+ reviews</div>
+        </div>
+      </div>
+
+      <aside>
+        <div class="hero-visual card">
+          <!-- simple illustrative SVG -->
+          <svg viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <defs>
+              <linearGradient id="g" x1="0" x2="1">
+                <stop offset="0" stop-color="#7cc3ff"/>
+                <stop offset="1" stop-color="#0b74ff"/>
+              </linearGradient>
+            </defs>
+            <rect x="20" y="40" rx="12" ry="12" width="420" height="260" fill="#fff" stroke="#e6eefc"/>
+            <circle cx="460" cy="110" r="48" fill="url(#g)" opacity="0.95" />
+            <rect x="60" y="80" width="300" height="18" rx="8" fill="#eef6ff"/>
+            <rect x="60" y="110" width="240" height="12" rx="6" fill="#f4f9ff"/>
+            <rect x="60" y="140" width="180" height="12" rx="6" fill="#f4f9ff"/>
+            <rect x="60" y="200" width="320" height="36" rx="10" fill="#0b74ff"/>
+          </svg>
+        </div>
+      </aside>
+    </section>
+
+    <section id="pricing">
+      <h2 style="margin-top:10px">Pricing</h2>
+      <p style="color:var(--muted);margin:6px 0 18px">Simple pricing with honest billing — monthly or yearly.</p>
+      <div class="pricing">
+        <div class="plan">
+          <h3>Starter</h3>
+          <div class="price">$0 / month</div>
+          <p style="color:var(--muted)">For personal projects and testing.</p>
+          <div style="margin-top:12px"><a class="btn" href="#contact">Get started</a></div>
+        </div>
+        <div class="plan">
+          <h3>Pro</h3>
+          <div class="price">$29 / month</div>
+          <p style="color:var(--muted)">All features for growing teams.</p>
+          <div style="margin-top:12px"><a class="btn" href="#contact">Start trial</a></div>
+        </div>
+        <div class="plan">
+          <h3>Enterprise</h3>
+          <div class="price">Custom</div>
+          <p style="color:var(--muted)">SLA, onboarding, and volume discounts.</p>
+          <div style="margin-top:12px"><a class="btn" href="#contact">Contact us</a></div>
+        </div>
+      </div>
+
+      <div class="cta" style="margin-top:18px">
+        <div>
+          <strong style="font-size:16px">Ready to see it in action?</strong>
+          <div style="color:var(--muted);margin-top:6px">Start a free 14-day trial — no credit card required.</div>
+        </div>
+        <div>
+          <a class="btn" href="#contact">Start free trial</a>
+        </div>
+      </div>
+
+    </section>
+
+    <section id="contact" style="margin-top:8px">
+      <div class="card">
+        <h3>Contact sales</h3>
+        <p style="color:var(--muted);margin:8px 0">Questions? Send us a message and we'll respond within one business day.</p>
+        <form onsubmit="event.preventDefault();alert('Thanks — form submission demo. Replace with real backend.');">
+          <div style="display:flex;gap:12px;flex-wrap:wrap">
+            <input type="text" name="name" placeholder="Your name" style="flex:1;padding:10px;border-radius:8px;border:1px solid #e6eefc" required>
+            <input type="email" name="email" placeholder="Email" style="flex:1;padding:10px;border-radius:8px;border:1px solid #e6eefc" required>
+          </div>
+          <textarea name="message" placeholder="How can we help?" style="width:100%;margin-top:12px;padding:12px;border-radius:8px;border:1px solid #e6eefc;min-height:100px"></textarea>
+          <div style="margin-top:12px"><button class="btn" type="submit">Send message</button></div>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="container">
+    <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
+      <div style="color:var(--muted)">© YourProduct — Built with care</div>
+      <div style="color:var(--muted)">Privacy · Terms</div>
+    </div>
+  </footer>
+
+</body>
+</html>
